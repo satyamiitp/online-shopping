@@ -11,8 +11,15 @@ $(function() {
 		$('#contact').addClass('active');
 		break;
 		
+	case 'All Products':
+		$('#listproducts').addClass('active');
+		break;	
+			
 	default:
-		$('#home').addClass('active');
-	      break;	
-	}	
+		$('#listproducts').addClass('active');
+	    $('#a_'+menu).addClass('active');  
+	    break;	
+	}
+	
+	/*even we can use directely  $('#a_${category.name}).addClass('active'); */
 });

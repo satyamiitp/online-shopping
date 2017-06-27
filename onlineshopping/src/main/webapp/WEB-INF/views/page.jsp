@@ -24,6 +24,8 @@
 <title>Online Shopping -${title}</title>
 
 
+
+
 <script>
 	window.menu = '${title}';
 	
@@ -81,6 +83,13 @@
 			<c:if test="${userClickContact == true }">
 				<%@include file="contact.jsp"%>
 			</c:if>
+			
+			<!-- load only when user click contacts -->
+
+			<c:if test="${userClickAllProdutcs == true or userClickCategoryProdutcs==true}">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
 
 		</div>
 		<!-- footer comes here  -->

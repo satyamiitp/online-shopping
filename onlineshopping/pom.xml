@@ -17,6 +17,14 @@
 
 	<dependencies>
 
+         <!-- Linking backend project   -->
+		<dependency>
+			<groupId>com.sat</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -42,14 +50,14 @@
 			<version>${spring.version}</version>
 		</dependency>
 
-   <!-- Jstl -->
-   
-         <dependency>
+		<!-- Jstl -->
+
+		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-   
+
 
 
 	</dependencies>
